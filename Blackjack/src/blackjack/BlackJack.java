@@ -6,6 +6,9 @@ package blackjack;
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class BlackJack extends Applet implements MouseListener
@@ -50,6 +53,8 @@ public class BlackJack extends Applet implements MouseListener
       TitleScreen = getImage (getDocumentBase (), TS);
       if (TitleScreen == null)
           System.exit (0);
+      else
+    	  showStatus("TitleScreen Loaded!");
 
       //Paint Instructions Screen picture
       String IS = "Screens/InstructionsScreen.jpg ";
