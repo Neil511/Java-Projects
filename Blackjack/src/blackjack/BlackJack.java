@@ -53,8 +53,6 @@ public class BlackJack extends Applet implements MouseListener
       TitleScreen = getImage (getDocumentBase (), TS);
       if (TitleScreen == null)
           System.exit (0);
-      else
-    	  showStatus("TitleScreen Loaded!");
 
       //Paint Instructions Screen picture
       String IS = "Screens/InstructionsScreen.jpg ";
@@ -195,7 +193,7 @@ public class BlackJack extends Applet implements MouseListener
           betamount = 0;
           PrintCpuCards = 1;
           winlose = "Loss";
-          money -= 50;
+          //money -= 50;
           if (money < 0)
               money = 0;
 
@@ -228,7 +226,7 @@ public class BlackJack extends Applet implements MouseListener
           betamount = 0;
           PrintCpuCards = 1;
           winlose = "Loss";
-          money -= 50;
+          //money -= 50;
           if (money < 0)
               money = 0;
 
@@ -255,7 +253,7 @@ public class BlackJack extends Applet implements MouseListener
           betamount = 0;
           PrintCpuCards = 1;
           winlose = "Loss";
-          money -= 50;
+          //money -= 50;
           if (money < 0)
               money = 0;
 
