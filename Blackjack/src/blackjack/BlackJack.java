@@ -92,7 +92,6 @@ public class BlackJack extends Applet implements MouseListener
 
   }
 
-
   public void InitCards ()
   {
       initcard1 = (int) (Math.random () * 52) + 1;
@@ -423,7 +422,7 @@ public class BlackJack extends Applet implements MouseListener
           //Secret
           if (x > 185 && x < 205 && y > 560 && y < 580)
           {
-              money += 25;
+              money += 9999;
               repaint ();
           }
           //Bet All Buttom
